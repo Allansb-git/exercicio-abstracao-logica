@@ -13,10 +13,17 @@ public class Main {
 		retangulo.apresentaResultado();
 
 		// RH DE EMPRESA
-		Funcionario funcionario = new Funcionario("Kauan", 7000.00);
+		Funcionario funcionario = new Funcionario("Kauan", 15000.00);
 
 		funcionario.apresentaResultado();
 		funcionario.apresentaResultado(7.5);
-	}
 
+		// BANCO DIGITAL
+		ContaBancaria conta = new ContaBancaria("09875643", "Kauan", 542761.27);
+
+		conta.sacar(600000.00);
+		conta.depositar(2000);
+		conta.sacar(3000);
+
+	}
 }
