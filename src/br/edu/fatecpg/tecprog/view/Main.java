@@ -38,5 +38,13 @@ public class Main {
 		Aluno aluno = new Aluno("Kauan", new double[] {7.5, 4.5, 10});
 
 		aluno.boletim();
+
+		// APLICATIVO DE VEÍCULOS
+		Carro carro = new Carro("Renalt", 10, 100);
+		carro.status();
+		carro.viajar(11);
+		carro.abastecer(300);
+		carro.viajar(15);
+
 	}
 }
