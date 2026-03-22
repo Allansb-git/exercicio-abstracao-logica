@@ -25,5 +25,12 @@ public class Main {
 		conta.depositar(2000);
 		conta.sacar(3000);
 
+		// CONTROLE DE ESTOQUE
+		Produto produto = new Produto("Vanish em Pó", 32.90, 45);
+
+		produto.apresentar();
+		produto.vender(50);
+		produto.vender(40);
+		System.out.println(produto.quantidade);
 	}
 }
