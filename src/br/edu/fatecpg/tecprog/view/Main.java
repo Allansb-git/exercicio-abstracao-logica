@@ -1,4 +1,5 @@
 package br.edu.fatecpg.tecprog.view;
+import java.sql.Array;
 import java.util.Scanner;
 import br.edu.fatecpg.tecprog.model.*;
 
@@ -24,6 +25,26 @@ public class Main {
 		conta.sacar(600000.00);
 		conta.depositar(2000);
 		conta.sacar(3000);
+
+		// CONTROLE DE ESTOQUE
+		Produto produto = new Produto("Vanish em Pó", 32.90, 45);
+
+		produto.apresentar();
+		produto.vender(50);
+		produto.vender(40);
+		System.out.println(produto.quantidade);
+
+		// SISTEMA ESCOLAR
+		Aluno aluno = new Aluno("Kauan", new double[] {7.5, 4.5, 10});
+
+		aluno.boletim();
+
+		// APLICATIVO DE VEÍCULOS
+		Carro carro = new Carro("Renalt", 10, 100);
+		carro.status();
+		carro.viajar(11);
+		carro.abastecer(300);
+		carro.viajar(15);
 
 	}
 }
