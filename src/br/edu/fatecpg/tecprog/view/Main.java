@@ -1,4 +1,5 @@
 package br.edu.fatecpg.tecprog.view;
+import java.sql.Array;
 import java.util.Scanner;
 import br.edu.fatecpg.tecprog.model.*;
 
@@ -32,5 +33,10 @@ public class Main {
 		produto.vender(50);
 		produto.vender(40);
 		System.out.println(produto.quantidade);
+
+		// SISTEMA ESCOLAR
+		Aluno aluno = new Aluno("Kauan", new double[] {7.5, 4.5, 10});
+
+		aluno.boletim();
 	}
 }
