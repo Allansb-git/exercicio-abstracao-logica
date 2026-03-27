@@ -4,6 +4,7 @@ import java.sql.Array;
 import java.util.Scanner;
 import br.edu.fatecpg.tecprog.model.*;
 
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -88,5 +89,16 @@ public class Main {
 		System.out.print("Qual o preço atual do combustível? R$ ");
 		double preco = scan.nextDouble();
 		planejamento.apresentaResultado(km, consumo2, preco);
+		
+		//PESSOA - IMC
+		Pessoa paciente = new Pessoa();
+		scan.nextLine();
+        System.out.print("\n\nNome do paciente: ");
+        String pac = scan.nextLine();
+        System.out.print("Digite o peso (kg): ");
+        double p = scan.nextDouble();
+        System.out.print("Digite a altura (m - ex: 1,75): ");
+        double a = scan.nextDouble();
+        paciente.apresentaResultado(pac, p, a);
 	}
 }
