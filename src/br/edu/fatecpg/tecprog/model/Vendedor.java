@@ -8,7 +8,7 @@ public class Vendedor {
 
         double salarioFinal = salarioBase + valorComissao;
 
-        System.out.println("\n--- Folha de Pagamento ---");
+        System.out.println("\n--- FOLHA DE PAGAMENTO ---");
         System.out.println("Vendedor: " + nome);
         System.out.printf("Salário Base: R$ %.2f\n", salarioBase);
         System.out.printf("Total de Vendas: R$ %.2f\n", totalVendas);

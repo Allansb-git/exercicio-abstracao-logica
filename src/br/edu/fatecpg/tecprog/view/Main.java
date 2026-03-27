@@ -49,19 +49,19 @@ public class Main {
 
 		// CONVERSOR DE TEMPERATURA
 		Temperatura conversor = new Temperatura();
-		System.out.print("\nDigite a temperatura em Celsius: ");
+		System.out.print("\n\nDigite a temperatura em Celsius: ");
 		double cel = scan.nextDouble();
 		conversor.apresentaResultado(cel);
 
 		// INDUSTRIA DE BOLAS(ESFERA)
 		Esfera bola = new Esfera();
-		System.out.print("\nInforme o raio da esfera (em cm): ");
+		System.out.print("\n\nInforme o raio da esfera (em cm): ");
 		double r = scan.nextDouble();
 		bola.apresentaResultado(r);
 
 		// SISTEMA DE VENDAS
 		Vendedor funcionario2 = new Vendedor();
-		System.out.print("\nNome do vendedor: ");
+		System.out.print("\n\nNome do vendedor: ");
 		String nome = scan.nextLine();
 		System.out.print("Informe o salário base: R$ ");
 		double base = scan.nextDouble();
@@ -73,11 +73,20 @@ public class Main {
 
 		// CONTA ENERGIA
 		ContaEnergia fatura = new ContaEnergia();
-		System.out.print("\nInforme o consumo do mês (kWh): ");
+		System.out.print("\n\nInforme o consumo do mês (kWh): ");
 		double consumo = scan.nextDouble();
 		System.out.print("Informe o valor unitário do kWh: R$ ");
 		double precoUnidade = scan.nextDouble();
 		fatura.apresentaResultado(consumo, precoUnidade);
 
+		// VIAGEM
+		Viagem planejamento = new Viagem();
+		System.out.print("\n\nDigite a distância da viagem (km): ");
+		double km = scan.nextDouble();
+		System.out.print("Qual o consumo do carro (km por litro)? ");
+		double consumo2 = scan.nextDouble();
+		System.out.print("Qual o preço atual do combustível? R$ ");
+		double preco = scan.nextDouble();
+		planejamento.apresentaResultado(km, consumo2, preco);
 	}
 }

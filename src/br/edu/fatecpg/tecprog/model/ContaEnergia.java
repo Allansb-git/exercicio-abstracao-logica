@@ -12,7 +12,7 @@ public class ContaEnergia {
 
 		double valorTotal = valorBruto - desconto;
 
-		System.out.println("\n--- Detalhamento da Fatura ---");
+		System.out.println("\n--- DETALHAMENTO FATURA ---");
 		System.out.printf("Consumo Mensal: %.2f kWh\n", consumoKwh);
 		System.out.printf("Valor por kWh: R$ %.2f\n", valorKwh);
 		System.out.printf("Valor Bruto: R$ %.2f\n", valorBruto);
