@@ -58,5 +58,17 @@ public class Main {
         System.out.print("\nInforme o raio da esfera (em cm): ");
         double r = scan.nextDouble();
         bola.apresentaResultado(r);
+        
+        //SISTEMA DE VENDAS
+        Vendedor funcionario2 = new Vendedor();
+        System.out.print("Nome do vendedor: ");
+        String nome = scan.nextLine();
+        System.out.print("Informe o salário base: R$ ");
+        double base = scan.nextDouble();
+        System.out.print("Total de vendas no mês: R$ ");
+        double vendas = scan.nextDouble();
+        System.out.print("Percentual de comissão (apenas números): ");
+        double porcetagem = scan.nextDouble();
+        funcionario2.folhaPagamento(nome, vendas, porcetagem, base);
 	}
 }
