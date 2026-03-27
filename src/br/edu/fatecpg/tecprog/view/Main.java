@@ -45,6 +45,13 @@ public class Main {
 		carro.viajar(11);
 		carro.abastecer(300);
 		carro.viajar(15);
+		
+		//CONVERSOR DE TEMPERATURA
+        Temperatura conversor = new Temperatura();
+        System.out.print("\nDigite a temperatura em Celsius: ");
+        double cel = scan.nextDouble();
+        conversor.apresentaResultado(cel);
+        scan.close();
 
 	}
 }
