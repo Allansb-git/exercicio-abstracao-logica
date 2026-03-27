@@ -51,7 +51,12 @@ public class Main {
         System.out.print("\nDigite a temperatura em Celsius: ");
         double cel = scan.nextDouble();
         conversor.apresentaResultado(cel);
-        scan.close();
-
+     
+        
+        //INDUSTRIA DE BOLAS(ESFERA)
+        Esfera bola = new Esfera();
+        System.out.print("\nInforme o raio da esfera (em cm): ");
+        double r = scan.nextDouble();
+        bola.apresentaResultado(r);
 	}
 }
