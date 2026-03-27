@@ -1,4 +1,5 @@
 package br.edu.fatecpg.tecprog.view;
+
 import java.sql.Array;
 import java.util.Scanner;
 import br.edu.fatecpg.tecprog.model.*;
@@ -35,7 +36,7 @@ public class Main {
 		System.out.println(produto.quantidade);
 
 		// SISTEMA ESCOLAR
-		Aluno aluno = new Aluno("Kauan", new double[] {7.5, 4.5, 10});
+		Aluno aluno = new Aluno("Kauan", new double[] { 7.5, 4.5, 10 });
 
 		aluno.boletim();
 
@@ -45,30 +46,38 @@ public class Main {
 		carro.viajar(11);
 		carro.abastecer(300);
 		carro.viajar(15);
-		
-		//CONVERSOR DE TEMPERATURA
-        Temperatura conversor = new Temperatura();
-        System.out.print("\nDigite a temperatura em Celsius: ");
-        double cel = scan.nextDouble();
-        conversor.apresentaResultado(cel);
-     
-        
-        //INDUSTRIA DE BOLAS(ESFERA)
-        Esfera bola = new Esfera();
-        System.out.print("\nInforme o raio da esfera (em cm): ");
-        double r = scan.nextDouble();
-        bola.apresentaResultado(r);
-        
-        //SISTEMA DE VENDAS
-        Vendedor funcionario2 = new Vendedor();
-        System.out.print("Nome do vendedor: ");
-        String nome = scan.nextLine();
-        System.out.print("Informe o salário base: R$ ");
-        double base = scan.nextDouble();
-        System.out.print("Total de vendas no mês: R$ ");
-        double vendas = scan.nextDouble();
-        System.out.print("Percentual de comissão (apenas números): ");
-        double porcetagem = scan.nextDouble();
-        funcionario2.folhaPagamento(nome, vendas, porcetagem, base);
+
+		// CONVERSOR DE TEMPERATURA
+		Temperatura conversor = new Temperatura();
+		System.out.print("\nDigite a temperatura em Celsius: ");
+		double cel = scan.nextDouble();
+		conversor.apresentaResultado(cel);
+
+		// INDUSTRIA DE BOLAS(ESFERA)
+		Esfera bola = new Esfera();
+		System.out.print("\nInforme o raio da esfera (em cm): ");
+		double r = scan.nextDouble();
+		bola.apresentaResultado(r);
+
+		// SISTEMA DE VENDAS
+		Vendedor funcionario2 = new Vendedor();
+		System.out.print("\nNome do vendedor: ");
+		String nome = scan.nextLine();
+		System.out.print("Informe o salário base: R$ ");
+		double base = scan.nextDouble();
+		System.out.print("Total de vendas no mês: R$ ");
+		double vendas = scan.nextDouble();
+		System.out.print("Percentual de comissão (apenas números): ");
+		double porcetagem = scan.nextDouble();
+		funcionario2.folhaPagamento(nome, vendas, porcetagem, base);
+
+		// CONTA ENERGIA
+		ContaEnergia fatura = new ContaEnergia();
+		System.out.print("\nInforme o consumo do mês (kWh): ");
+		double consumo = scan.nextDouble();
+		System.out.print("Informe o valor unitário do kWh: R$ ");
+		double precoUnidade = scan.nextDouble();
+		fatura.apresentaResultado(consumo, precoUnidade);
+
 	}
 }
